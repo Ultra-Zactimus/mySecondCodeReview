@@ -5,3 +5,15 @@
 .progLanguage {
   display:none;
 }
+
+.c-sharp {
+  background-image: url(../img/c-sharp.png)
+}
+
+.ruby {
+  background-image: url(../img/ruby.png)
+}
+
+.python {
+  background-image: url(../img/python)
+}
