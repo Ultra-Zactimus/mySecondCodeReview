@@ -9,34 +9,18 @@ $(document).ready(function() {
     const fifthAnswer = $("select#fifthQuestion").val();
 
     $("userLangType").removeAttr("class");
-    // if (firstAnswer === 'select' || secondAnswer === 'select' || thirdAnswer === 'select' || fourthAnswer === 'select' || fifthAnswer === 'select') { 
-    //   $("#invalidEntry").show();
-    //   $(".progLanguage").hide();
-     if (firstAnswer === 'numbers' || secondAnswer === 'style' || thirdAnswer === 'old' || fourthAnswer === 'run' || fifthAnswer === 'mornings'){
-      $(".progLanguage").show();
-      $(".c-sharp").show()
-    // } else if (firstAnswer === "numbers" && secondAnswer === "style" && thirdAnswer === "old" && fourthAnswer === "run" && fifthAnswer === "morning"){
-    //   $(".progLanguage").show();
-    //   $(".userLangType").addClass("ruby");
-    //   $(".userLangType").append("<p>You got C#!</p>");
-    // } else if (firstAnswer === "numbers" && secondAnswer === "style" && thirdAnswer === "old" && fourthAnswer === "run" && fifthAnswer === "morning") {
-    //   $(".progLanguage").show();
-    //   $(".userLangType").addClass("ruby");
-    //   $(".userLangType").append("<p>You got C#!</p>");
-    // } else if (firstAnswer === "numbers" && secondAnswer === "style" && thirdAnswer === "old" && fourthAnswer === "run" && fifthAnswer === "morning") {
-    //   $(".progLanguage").show();
-    //   $(".userLangType").addClass("python");
-    //   $(".userLangType").append("<p>You got C#!</p>");
-    // } else if (firstAnswer === "numbers" && secondAnswer === "style" && thirdAnswer === "old" && fourthAnswer === "run" && fifthAnswer === "morning") {
-    //   $(".progLanguage").show();
-    //   $(".userLangType").addClass("python");
-    //   $(".userLangType").append("<p>You got C#!</p>");
-    // } else if (firstAnswer === "select" || secondAnswer === "select" || thirdAnswer === "select" || fourthAnswer === "select" || fifthAnswer === "select") {
-    //     $(".progLanguage").show();
-    //     $("#userLangType").addClass("python");
-    //     $("#userLangType").append("<p>You got C#!</p>");
-      
-    }
+    if (firstAnswer === 'select' || secondAnswer === 'select' || thirdAnswer === 'select' || fourthAnswer === 'select' || fifthAnswer === 'select') { 
+      $("#invalidEntry").show();
+      $(".progLanguage").hide();
+      } 
+      event.preventDefault();
+
+      if (firstAnswer === 'numbers' || secondAnswer === 'style' || thirdAnswer === 'old' || fourthAnswer === 'run' || fifthAnswer === 'mornings') {
+        $(".progLanguage").show();
+        let progOne = "You should learn C#!!!";
+        return progOne;
+      }
+   
 
     event.preventDefault();
 
