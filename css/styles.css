@@ -8,12 +8,23 @@
 
 .c-sharp {
   background-image: url(../img/c-sharp.png)
+  width: 300px;
+  height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .ruby {
   background-image: url(../img/ruby.png)
+  width: 300px;
+  height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .python {
-  background-image: url(../img/python)
+  width: 300px;
+  height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
