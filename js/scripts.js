@@ -9,13 +9,12 @@ $(document).ready(function() {
     const fifthAnswer = $("select#fifthQuestion").val();
 
     $("userLangType").removeAttr("class");
-    if (firstAnswer === "select" || secondAnswer === "select" || thirdAnswer === "select" || fourthAnswer === "select" || fifthAnswer === "select"){ 
-      $("#invalidEntry").show();
-      $(".progLanguage").hide();
-    } else if (firstAnswer === "numbers" && secondAnswer === "style" && thirdAnswer === "old" && fourthAnswer === "run" && fifthAnswer === "mornings"){
+    // if (firstAnswer === 'select' || secondAnswer === 'select' || thirdAnswer === 'select' || fourthAnswer === 'select' || fifthAnswer === 'select') { 
+    //   $("#invalidEntry").show();
+    //   $(".progLanguage").hide();
+     if (firstAnswer === 'numbers' || secondAnswer === 'style' || thirdAnswer === 'old' || fourthAnswer === 'run' || fifthAnswer === 'mornings'){
       $(".progLanguage").show();
-      $(".userLangType").addClass("c-sharp");
-      $(".userLangType").append("<p>You got C#!</p>");
+      $(".c-sharp").show()
     // } else if (firstAnswer === "numbers" && secondAnswer === "style" && thirdAnswer === "old" && fourthAnswer === "run" && fifthAnswer === "morning"){
     //   $(".progLanguage").show();
     //   $(".userLangType").addClass("ruby");

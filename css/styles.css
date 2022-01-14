@@ -7,24 +7,5 @@
 }
 
 .c-sharp {
-  background-image: url(../img/c-sharp.png)
-  width: 300px;
-  height: 300px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.ruby {
-  background-image: url(../img/ruby.png)
-  width: 300px;
-  height: 300px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.python {
-  width: 300px;
-  height: 300px;
-  background-size: contain;
-  background-repeat: no-repeat;
+  display: none;
 }
