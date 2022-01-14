@@ -50,7 +50,7 @@ $(document).ready(function() {
         $(".resultsThree").hide();
         $("#invalidEntry").hide();
 
-      } else if (firstAnswer === 'letters' && thirdAnswer === 'tv') {
+      } else if (firstAnswer === 'letters' && thirdAnswer === 'new') {
         $(".resultsTwo").show();
         $(".resultsThree").hide();
         $(".resultsOne").hide();
@@ -62,43 +62,14 @@ $(document).ready(function() {
         $(".resultsOne").hide();
         $("#invalidEntry").hide();
 
-      } else if (firstAnswer === 'letters' && fifthAnswer === 'twilight'){
+      } else if (firstAnswer === 'letters' && fifthAnswer === 'evenings'){
         $(".resultsTwo").show();
         $(".resultsThree").hide();
-        $(".resultsOne").hide();
-        $("#invalidEntry").hide();
-
-      }
-      
-      event.preventDefault();
-
-      if (firstAnswer === 'symbols' && secondAnswer === 'complex') {
-        $(".resultsTwo").show();
-        $(".resultsOne").hide();
-        $(".resultsThree").hide();
-        $("#invalidEntry").hide();
-
-      } else if (firstAnswer === 'symbols' && thirdAnswer === 'new') {
-        $(".resultsTwo").show();
-        $(".resultsTwo").hide();
-        $(".resultsOne").hide();
-        $("#invalidEntry").hide();
-
-      } else if (firstAnswer === 'symbols' && fourthAnswer === 'walk'){
-        $(".resultsTwo").show();
-        $(".resultsTwo").hide();
-        $(".resultsOne").hide();
-        $("#invalidEntry").hide();
-
-      } else if (firstAnswer === 'symbols' && fifthAnswer === 'mornings'){
-        $(".resultsTwo").show();
-        $(".resultsTwo").hide();
         $(".resultsOne").hide();
         $("#invalidEntry").hide();
 
       }
    
-
     event.preventDefault();
 
   });
