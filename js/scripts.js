@@ -11,14 +11,28 @@ $(document).ready(function() {
     $("userLangType").removeAttr("class");
     if (firstAnswer === 'select' || secondAnswer === 'select' || thirdAnswer === 'select' || fourthAnswer === 'select' || fifthAnswer === 'select') { 
       $("#invalidEntry").show();
-      $(".progLanguage").hide();
+      $(".resultsOne").hide();
+      $(".resultsTwo").hide();
+      $(".resultsThree").hide();
       } 
       event.preventDefault();
 
       if (firstAnswer === 'numbers' || secondAnswer === 'style' || thirdAnswer === 'old' || fourthAnswer === 'run' || fifthAnswer === 'mornings') {
-        $(".progLanguage").show();
-        let progOne = "You should learn C#!!!";
-        return progOne;
+        $(".resultsOne").show();
+        $(".resultsTwo").hide();
+        $(".resultsThree").hide();
+        $("#invalidEntry").hide();
+        
+      } else if (firstAnswer === 'letters' || secondAnswer === 'function' || thirdAnswer === 'new' || fourthAnswer === 'walk' || fifthAnswer === 'evenings') {
+        $(".resultsTwo").show();
+        $(".resultsOne").hide();
+        $(".resultsThree").hide();
+        $("#invalidEntry").hide();
+      } else if (firstAnswer === 'symbols' || secondAnswer === 'complex' || thirdAnswer === 'tv' || fourthAnswer === 'sit' || fifthAnswer === 'twilight') {
+        $(".resultsThree").show();
+        $(".resultsTwo").hide();
+        $(".resultsOne").hide();
+        $("#invalidEntry").hide();
       }
    
 

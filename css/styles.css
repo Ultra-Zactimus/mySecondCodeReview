@@ -2,7 +2,15 @@
   display: none;
 }
 
-.progLanguage {
+.resultsOne {
+  display:none;
+}
+
+.resultsTwo {
+  display:none;
+}
+
+.resultsThree {
   display:none;
 }
 
