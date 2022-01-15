@@ -24,15 +24,15 @@ $(document).ready(function() {
         $("#invalidEntry").hide();
         
       } else if (firstAnswer === 'numbers' && thirdAnswer === 'old') {
-        $(".resultsOne").show();
-        $(".resultsTwo").hide();
+        $(".resultsOne").hide();
+        $(".resultsTwo").show();
         $(".resultsThree").hide();
         $("#invalidEntry").hide();
 
-      } else if (firstAnswer === 'numbers' && fourthAnswer === 'sit') {
-        $(".resultsOne").show();
+      } else if (firstAnswer === 'numbers' && fourthAnswer === 'run') {
+        $(".resultsOne").hide();
         $(".resultsTwo").hide();
-        $(".resultsThree").hide();
+        $(".resultsThree").show();
         $("#invalidEntry").hide();
         
       } else if (firstAnswer === 'numbers' && fifthAnswer === 'mornings'){
@@ -41,35 +41,35 @@ $(document).ready(function() {
         $(".resultsThree").hide();
         $("#invalidEntry").hide();
       }
-
+      
       event.preventDefault();
       
-      if (firstAnswer === 'letters' && secondAnswer === 'function') {
-        $(".resultsTwo").show();
-        $(".resultsOne").hide();
-        $(".resultsThree").hide();
-        $("#invalidEntry").hide();
+        if (firstAnswer === 'letters' && secondAnswer === 'function') {
+          $(".resultsTwo").show();
+          $(".resultsOne").hide();
+          $(".resultsThree").hide();
+          $("#invalidEntry").hide();
 
-      } else if (firstAnswer === 'letters' && thirdAnswer === 'new') {
-        $(".resultsTwo").show();
-        $(".resultsThree").hide();
-        $(".resultsOne").hide();
-        $("#invalidEntry").hide();
+        } else if (firstAnswer === 'letters' && thirdAnswer === 'tv') {
+          $(".resultsTwo").hide();
+          $(".resultsTwo").show();
+          $(".resultsOne").hide();
+          $("#invalidEntry").hide();
 
-      } else if (firstAnswer === 'letters' && fourthAnswer === 'walk'){
-        $(".resultsTwo").show();
-        $(".resultsThree").hide();
-        $(".resultsOne").hide();
-        $("#invalidEntry").hide();
+        } else if (firstAnswer === 'letters' && fourthAnswer === 'walk'){
+          $(".resultsTwo").hide();
+          $(".resultsTwo").hide();
+          $(".resultsOne").show();
+          $("#invalidEntry").hide();
 
-      } else if (firstAnswer === 'letters' && fifthAnswer === 'evenings'){
-        $(".resultsTwo").show();
-        $(".resultsThree").hide();
-        $(".resultsOne").hide();
-        $("#invalidEntry").hide();
+        } else if (firstAnswer === 'letters' && fifthAnswer === 'evenings'){
+          $(".resultsTwo").show();
+          $(".resultsTwo").hide();
+          $(".resultsOne").hide();
+          $("#invalidEntry").hide();
 
-      }
-   
+        }
+        
     event.preventDefault();
 
   });
