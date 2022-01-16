@@ -6,7 +6,7 @@ Authored by: Zachary Green
 Under the tutorship of Epicodus
 #
 
-This document is a Work-in-Progress. It contains all the key elements of coding in HTML including JavaScript. Document is a quiz to determine which programming launguage the user should study. This answer is based on 5 questions which 2 choices in each.
+This document contains all the key elements of coding in HTML including JavaScript, CSS and many important HTML types. Document is a quiz to determine which programming launguage the user should study. This answer is determined off of 5 questions with 3 choices in each. Document demonstrates the funcionality to using bracnhing as well as the .show() and .hide() functions.
 #
 
 Link to Document:
@@ -30,7 +30,8 @@ Link to User Page: https://github.com/Ultra-Zactimus
 
 Known Bugs:
 #
-Picking different options doesnt display all 3 options. Only Ruby on Rails result is displying at this time. Will be needing to repair these issues.
+Document is in full working condition at this time.
+No known bugs. 
 #
 
 Copyright of Zachary Green
