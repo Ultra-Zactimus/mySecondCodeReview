@@ -14,7 +14,7 @@ Link to Document:
 https://github.com/Ultra-Zactimus/mySecondCodeReview
 #
 
-Technologies Used: HTML, CSS, Markdown, GitBash, gitHub
+Technologies Used: HTML, CSS, BootStrap, JavaScript, Jquery, Markdown, GitBash, gitHub
 #
 
 Application Setup Instructions

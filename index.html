@@ -1,85 +1,122 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery-3.6.0.js"></script>
-  <script src="js/scripts.js"></script>
-  <title>My Second Code Review At Epicodus</title>
-</head>
-<body class="back-ground">
-  <div class="container">
-    <h1><strong>Find Out Which Programming Language You Should Learn!</strong></h1>
-    <br>
-    <h2>Please fill out the following information:</h2>
-    <br>
-    <form id="selections">
-      <div class="form-group">
-          <label for="firstQuestion"><h4>Do you like numbers or letters?</h4></label>
-        <select class="form-group" id="firstQuestion">
-          <option value="select">Select</option>
-          <option value="numbers">Numbers</option>
-          <option value="letters">Letters</option>
-        </select>
-      </div>
-      <div class="form-group">
-          <label for="secondQuestion"><h4>Do you like style or functionality?</h4></label>
+
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>My Second Code Review At Epicodus</title>
+  </head>
+
+  <body class="back-ground">
+    <div class="container">
+      <h1><strong>Find Out Which Programming Language You Should Learn!</strong></h1>
+      <br>
+      <form id="selections">
+      <h2>Please fill out the following information:</h2>
+      <br>
+        <div class="form-group">
+          <label for="firstQuestion">
+            <h4>Do you like numbers, letters or symbols?</h4>
+          </label>
+          <select class="form-group" id="firstQuestion">
+            <option value="select">Select</option>
+            <option value="numbers">Numbers</option>
+            <option value="letters">Letters</option>
+            <option value="symbols">Symbols</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="secondQuestion">
+            <h4>Do you like style, functionality or complexity?</h4>
+          </label>
           <select class="form-group" id="secondQuestion">
             <option value="select">Select</option>
             <option value="style">Style</option>
             <option value="function">Functionality</option>
+            <option value="complex">Complexity</option>
           </select>
-      </div>
-      <div class="form-group">
-          <label for="thirdQuestion"><h4>Do you like old movies or new movies?</h4></label>
+        </div>
+        <div class="form-group">
+          <label for="thirdQuestion">
+            <h4>Do you like old movies, new movies or television?</h4>
+          </label>
           <select class="form-group" id="thirdQuestion">
             <option value="select">Select</option>
             <option value="old">Old Movies</option>
             <option value="new">New Movies</option>
+            <option value="tv">Television</option>
           </select>
-      </div>
-      <div class="form-group">
-          <label for="fourthQuestion"><h4>Do you like running or sitting?</h4></label>
+        </div>
+        <div class="form-group">
+          <label for="fourthQuestion">
+            <h4>Do you like running, walking or sitting?</h4>
+          </label>
           <select class="form-group" id="fourthQuestion">
             <option value="select">Select</option>
             <option value="run">Running</option>
             <option value="walk">Walking</option>
+            <option value="sit">Sitting</option>
           </select>
-      </div>
-      <div class="form-group">
-          <label for="fifthQuestion"><h4>Do you like mornings or evenings?</h4></label>
+        </div>
+        <div class="form-group">
+          <label for="fifthQuestion">
+            <h4>Do you like mornings, evenings or twilight?</h4>
+          </label>
           <select class="form-group" id="fifthQuestion">
             <option value="select">Select</option>
-            <option value="mornings">Mornings</option>
-            <option value="evenings">Evenings</option>
+            <option value="morning">Mornings</option>
+            <option value="evening">Evenings</option>
+            <option value="twlight">Twilight</option>
           </select>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-success" type="submit">SUBMIT</button>
+        </div>
+      </form>
+      <p id="invalidEntry">Please Answer All Questions Before Submission</p>
+      <div class="resultsOne">
+        <h2>Here are your results:</h2>
+        <div>
+          <p><em>You should learn C#!!!</em></p>
+          <img src="img/c-sharp.png" width=300>
+          <div>
+            <span class="reset" type="reset">Click Here To Return to the Quiz</span>
+          </div>
+        </div>
       </div>
-      <div class="form-group">
-        <button class="btn btn-success" type="submit">SUBMIT</button>
+      <div class="resultsTwo">
+        <h2>Here are your results:</h2>
+        <div>
+          <p><em>You should learn Ruby!!!</em></p>
+          <img src="img/ruby.png" width=300>
+          <div>
+            <span class="reset" type="reset">Click Here To Return to the Quiz</span>
+          </div>
+        </div>
       </div>
-    </form>
-    <p id="invalidEntry">Please Answer All Questions Before Submission</p>
-    <div class="resultsOne">
-      <h2>Here are your results:</h2>
-      <div>
-        <p><em>You should learn C#!!!</em></p>
-        <img src="img/c-sharp.png" width=300>
+      <div class="resultsThree">
+        <h2>Here are your results:</h2>
+        <div>
+          <p><em>You should learn Python!!!</em></p>
+          <img src="img/python.png" width=300>
+          <div>
+            <span class="reset" type="reset">Click Here To Return to the Quiz</span>
+          </div>
+        </div>
+      </div>
+      <div class="resultsFour">
+        <h2>Here are your results:</h2>
+        <div>
+          <p><em>You should learn JavaScript!!!</em></p>
+          <img src="img/javascript.jpg" width=300>
+          <div>
+            <span class="reset" type="reset">Click Here To Return to the Quiz</span>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="resultsTwo">
-      <h2>Here are your results:</h2>
-      <div>
-        <p><em>You should learn Ruby!!!</em></p>
-        <img src="img/ruby.png" width=300>
-      </div>
-    </div>
-    <div class="resultsThree">
-      <h2>Here are your results:</h2>
-      <div>
-        <p><em>You should learn Python!!!</em></p>
-        <img src="img/python.png"width=300>
-      </div>
-    </div>
-  </div>
-</body>
+  </body>
+
 </html>

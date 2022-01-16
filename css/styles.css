@@ -3,19 +3,23 @@
 }
 
 .resultsOne {
-  display:none;
+  display: none;
 }
 
 .resultsTwo {
-  display:none;
+  display: none;
 }
 
 .resultsThree {
-  display:none;
+  display: none;
 }
 
-#c-sharp {
-  display:none
+.resultsFour {
+  display: none;
+}
+
+#selections {
+  display:initial;
 }
 
 body {
@@ -23,6 +27,16 @@ body {
 }
 
 .back-ground {
-  background-color:#8b008b;
+  background-color: #8b008b;
   text-align: center;
+}
+
+.reset:hover {
+  text-decoration: underline;
+
+}
+
+.reset {
+  cursor: pointer;
+  color: #0088cc;
 }

@@ -1,122 +1,283 @@
 $(document).ready(function() {
 
-  $("form#selections").submit(function(event){
+  $("form#selections").submit(function(event) {
 
-    const firstAnswer = $("select#firstQuestion").val(); 
+    const firstAnswer = $("select#firstQuestion").val();
     const secondAnswer = $("select#secondOuestion").val();
     const thirdAnswer = $("select#thirdQuestion").val();
     const fourthAnswer = $("select#fourthQuestion").val();
     const fifthAnswer = $("select#fifthQuestion").val();
 
-    if (firstAnswer === 'select' || secondAnswer === 'select' || thirdAnswer === 'select' || fourthAnswer === 'select' || fifthAnswer === 'select') { 
+    if (firstAnswer === 'select' || secondAnswer === 'select' || thirdAnswer === 'select' || fourthAnswer === 'select' || fifthAnswer === 'select') {
       $("#invalidEntry").show();
       $(".resultsOne").hide();
       $(".resultsTwo").hide();
       $(".resultsThree").hide();
-      } 
+      $(".resultsFour").hide();
+
+
+    } else if (firstAnswer === 'numbers' && secondAnswer === 'style' && thirdAnswer === 'old') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").show();
+      $(".resultsTwo").hide();
+      $(".resultsThree").hide();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+  
+    } else if (firstAnswer === 'numbers' && secondAnswer === 'style' && fourthAnswer === 'run') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").show();
+      $(".resultsTwo").hide();
+      $(".resultsThree").hide();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+ 
+    } else if (firstAnswer === 'numbers' && secondAnswer === 'style' && fifthAnswer === 'morning') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").show();
+      $(".resultsTwo").hide();
+      $(".resultsThree").hide();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+     
+    } else if (firstAnswer === 'numbers' && thirdAnswer === 'old' && fourthAnswer === 'run') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").show();
+      $(".resultsTwo").hide();
+      $(".resultsThree").hide();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+     
+    } else if (firstAnswer === 'numbers' && thirdAnswer === 'style' && fifthAnswer === 'morning') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").show();
+      $(".resultsTwo").hide();
+      $(".resultsThree").hide();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+    
+    } else if (firstAnswer === 'numbers' && fourthAnswer === 'run' && fifthAnswer === 'morning') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").show();
+      $(".resultsTwo").hide();
+      $(".resultsThree").hide();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+    
+    } else if (secondAnswer === 'style' && thirdAnswer === 'old' && fourthAnswer === 'run') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").show();
+      $(".resultsTwo").hide();
+      $(".resultsThree").hide();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+    
+    } else if (secondAnswer === 'style' && thirdAnswer === 'old' && fifthAnswer === 'morning') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").show();
+      $(".resultsTwo").hide();
+      $(".resultsThree").hide();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+     
+    } else if (secondAnswer === 'style' && fourthAnswer === 'run' && fifthAnswer === 'morning') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").show();
+      $(".resultsTwo").hide();
+      $(".resultsThree").hide();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+     
+    } else if (thirdAnswer === 'old' && fourthAnswer === 'run' && fifthAnswer === 'morning') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").show();
+      $(".resultsTwo").hide();
+      $(".resultsThree").hide();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+    
+    } else if (firstAnswer === 'letters' && secondAnswer === 'function' && thirdAnswer === 'new') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").hide();
+      $(".resultsTwo").show();
+      $(".resultsThree").hide();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+   
+    } else if (firstAnswer === 'letters' && secondAnswer === 'function' && fourthAnswer === 'walk') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").hide();
+      $(".resultsTwo").show();
+      $(".resultsThree").hide();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+    
+    } else if (firstAnswer === 'letters' && secondAnswer === 'functions' && fifthAnswer === 'evening') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").hide();
+      $(".resultsTwo").show();
+      $(".resultsThree").hide();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+   
+    } else if (firstAnswer === 'letters' && thirdAnswer === 'new' && fourthAnswer === 'walk') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").hide();
+      $(".resultsTwo").show();
+      $(".resultsThree").hide();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+   
+    } else if (firstAnswer === 'letters' && thirdAnswer === 'function' && fifthAnswer === 'evening') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").hide();
+      $(".resultsTwo").show();
+      $(".resultsThree").hide();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+    
+    } else if (firstAnswer === 'letters' && fourthAnswer === 'walk' && fifthAnswer === 'evening') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").hide();
+      $(".resultsTwo").show();
+      $(".resultsThree").hide();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+
+    } else if (secondAnswer === 'function' && thirdAnswer === 'new' && fourthAnswer === 'walk') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").hide();
+      $(".resultsTwo").show();
+      $(".resultsThree").hide();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+    
+    } else if (secondAnswer === 'function' && thirdAnswer === 'new' && fifthAnswer === 'evening') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").hide();
+      $(".resultsTwo").show();
+      $(".resultsThree").hide();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+    
+    } else if (secondAnswer === 'function' && fourthAnswer === 'walk' && fifthAnswer === 'evening') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").hide();
+      $(".resultsTwo").show();
+      $(".resultsThree").hide();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+   
+    } else if (thirdAnswer === 'new' && fourthAnswer === 'walk' && fifthAnswer === 'evening') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").hide();
+      $(".resultsTwo").show();
+      $(".resultsThree").hide();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+ 
+    } else if (firstAnswer === 'symbols' && secondAnswer === 'complex' && thirdAnswer === 'tv') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").hide();
+      $(".resultsTwo").hide();
+      $(".resultsThree").show();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+  
+    } else if (firstAnswer === 'symbols' && secondAnswer === 'complex' && fourthAnswer === 'sit') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").hide();
+      $(".resultsTwo").hide();
+      $(".resultsThree").show();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+  
+    } else if (firstAnswer === 'symbols' && secondAnswer === 'complex' && fifthAnswer === 'twilight') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").hide();
+      $(".resultsTwo").hide();
+      $(".resultsThree").show();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+
+    } else if (firstAnswer === 'symbols' && thirdAnswer === 'tv' && fourthAnswer === 'sit') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").hide();
+      $(".resultsTwo").hide();
+      $(".resultsThree").show();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+
+    } else if (firstAnswer === 'symbols' && thirdAnswer === 'tv' && fifthAnswer === 'twilight') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").hide();
+      $(".resultsTwo").hide();
+      $(".resultsThree").show();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+     
+    } else if (firstAnswer === 'symbols' && fourthAnswer === 'sit' && fifthAnswer === 'twilight') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").hide();
+      $(".resultsTwo").hide();
+      $(".resultsThree").show();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+ 
+    } else if (secondAnswer === 'complex' && thirdAnswer === 'tv' && fourthAnswer === 'sit') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").hide();
+      $(".resultsTwo").hide();
+      $(".resultsThree").show();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+      
+    } else if (secondAnswer === 'complex' && thirdAnswer === 'tv' && fifthAnswer === 'twilight') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").hide();
+      $(".resultsTwo").hide();
+      $(".resultsThree").show();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+   
+    } else if (secondAnswer === 'complex' && fourthAnswer === 'sit' && fifthAnswer === 'twilight') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").hide();
+      $(".resultsTwo").hide();
+      $(".resultsThree").show();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+
+    } else if (thirdAnswer === 'tv' && fourthAnswer === 'sit' && fifthAnswer === 'twilight') {
+      $("#invalidEntry").hide();
+      $(".resultsOne").hide();
+      $(".resultsTwo").hide();
+      $(".resultsThree").show();
+      $(".resultsFour").hide();
+      $("#selections").hide();
+
+    } else {
+      $("#invalidEntry").hide();
+      $(".resultsOne").hide();
+      $(".resultsTwo").hide();
+      $(".resultsThree").hide();
+      $(".resultsFour").show();
+      $("#selections").hide();
+   
+    }
 
       event.preventDefault();
 
-      if (firstAnswer === 'numbers' && secondAnswer === 'style') {
-        $(".resultsOne").show();
-        $(".resultsTwo").hide();
-        $(".resultsThree").hide();
-        $("#invalidEntry").hide();
-        
-      } else if (firstAnswer === 'numbers' && thirdAnswer === 'old') {
-        $(".resultsOne").hide();
-        $(".resultsTwo").show();
-        $(".resultsThree").hide();
-        $("#invalidEntry").hide();
-
-      } else if (firstAnswer === 'numbers' && fourthAnswer === 'run') {
-        $(".resultsOne").hide();
-        $(".resultsTwo").hide();
-        $(".resultsThree").show();
-        $("#invalidEntry").hide();
-        
-      } else if (firstAnswer === 'numbers' && fifthAnswer === 'mornings'){
-        $(".resultsOne").show();
-        $(".resultsTwo").hide();
-        $(".resultsThree").hide();
-        $("#invalidEntry").hide()
-
-      } else if (firstAnswer === 'numbers' && secondAnswer === 'function') {
-        $(".resultsTwo").hide();
-        $(".resultsOne").show();
-        $(".resultsThree").hide();
-        $("#invalidEntry").hide();
-
-      } else if (firstAnswer === 'numbers' && thirdAnswer === 'new') {
-        $(".resultsTwo").hide();
-        $(".resultsTwo").hide();
-        $(".resultsOne").show();
-        $("#invalidEntry").hide();
-
-      } else if (firstAnswer === 'numbers' && fourthAnswer === 'walk'){
-        $(".resultsTwo").show();
-        $(".resultsTwo").hide();
-        $(".resultsOne").hide();
-        $("#invalidEntry").hide();
-
-      } else if (firstAnswer === 'numbers' && fifthAnswer === 'evenings'){
-        $(".resultsTwo").hide();
-        $(".resultsTwo").show();
-        $(".resultsOne").hide();
-        $("#invalidEntry").hide();
-
-      } else if (firstAnswer === 'letters' && fifthAnswer === 'style'){
-        $(".resultsTwo").hide();
-        $(".resultsTwo").hide();
-        $(".resultsOne").show();
-        $("#invalidEntry").hide();
-      
-      }else if (firstAnswer === 'letters' && fifthAnswer === 'old'){
-        $(".resultsTwo").show();
-        $(".resultsTwo").hide();
-        $(".resultsOne").hide();
-        $("#invalidEntry").hide();
-
-      } else if (firstAnswer === 'letters' && fifthAnswer === 'run'){
-        $(".resultsTwo").hide();
-        $(".resultsTwo").show();
-        $(".resultsOne").hide();
-        $("#invalidEntry").hide();
-
-      } else if (firstAnswer === 'letters' && fifthAnswer === 'mornings'){
-        $(".resultsTwo").hide();
-        $(".resultsTwo").hide();
-        $(".resultsOne").show();
-        $("#invalidEntry").hide();
-
-      } else if (firstAnswer === 'letters' && fifthAnswer === 'function'){
-        $(".resultsTwo").show();
-        $(".resultsTwo").hide();
-        $(".resultsOne").hide();
-        $("#invalidEntry").hide();
-     
-      } else if (firstAnswer === 'letters' && fifthAnswer === 'new'){
-        $(".resultsTwo").hide();
-        $(".resultsTwo").show();
-        $(".resultsOne").hide();
-        $("#invalidEntry").hide();
-
-      } else if (firstAnswer === 'letters' && fifthAnswer === 'walk'){
-        $(".resultsTwo").hide();
-        $(".resultsTwo").hide();
-        $(".resultsOne").show();
-        $("#invalidEntry").hide();
-
-      } else if (firstAnswer === 'letters' && fifthAnswer === 'evenings'){
-        $(".resultsTwo").show();
-        $(".resultsTwo").hide();
-        $(".resultsOne").hide();
-        $("#invalidEntry").hide();
-
-      }
-      
-    event.preventDefault();
-
   });
+
+    $(".reset").click(function() {
+      $("#selections").toggle().show();
+      $(".resultsOne").toggle().hide();
+      $(".resultsTwo").toggle().hide();
+      $(".resultsThree").toggle().hide();
+      $(".resultsFour").toggle().hide();
+      document.getElementById('selections').reset();
+
+    });
 
 });
